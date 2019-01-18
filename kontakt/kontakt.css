@@ -1,0 +1,16 @@
+<!--
+/* KORREKTUREN */
+.kontakt #mm	{border: none;}
+
+/* SPEZIFISCHES */
+.kontakt #bl {position: relative; top: 20%; right: 0%; font-size: 14pt; text-align: right;}
+.kontakt #bl2 {position: relative; top: 20%; left: 0%; font-size: 14pt; text-align: left;}
+.hess {position: relative; top: 26%; right: 0%; font-size: 14pt; text-align: right;}
+.thue {position: relative; top: 26%; left: 0%; font-size: 14pt; text-align: left;}
+
+#leer {height: 14pt;}
+
+.kontakt #mmleft {position: absolute; width: 27.7%; height: 100%; background: #b7b7b7;}
+.kontakt #mmright {position: absolute; right: 0%; width: 27.7%; height: 100%; background: #b7b7b7;}
+
+-->

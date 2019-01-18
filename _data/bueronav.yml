@@ -1,0 +1,18 @@
+docs_list_title: Buero-Navigationsleiste
+docs:
+
+- title: B&uuml;ro
+  url: buero/essence/essence.html
+  key: essence
+
+- title: Partner
+  url: buero/partners/partners.html
+  key: partners
+
+- title: Kunst
+  url: buero/art/art.html
+  key: art
+
+- title: Skulptur
+  url: buero/sculpture/sculpture.html
+  key: sculpture

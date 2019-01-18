@@ -1,0 +1,24 @@
+
+#pic {
+	position: absolute; 
+	z-index: 1; 
+	height: 100%; 
+	border: none;}
+
+#float {
+	border: none; 
+	float: right; 
+	position: absolute; 
+	right: 0%;
+	width: 57%; 
+	height: 100%; 
+	background: #C4B3A1; 
+	z-index: 2; 
+	overflow: auto;}
+
+#mm {border: 1px solid white;}
+
+h1 {font-size: 18pt; padding-left: 15px; padding-right: 15px;}
+
+p {font-size: 15pt; text-align: justify; padding-left: 15px; padding-right: 15px;}
+
