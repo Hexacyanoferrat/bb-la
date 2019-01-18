@@ -1,0 +1,52 @@
+
+
+{% if include.links == 1 %}
+<div id="nav2">
+{% for item in site.data.bueronav.docs %}
+<a href="{{ item.url | absolute_url }}" class="button"><div id="{{ item.key }}"><h2 class="{% if page.url contains item.key %}active{% endif %}">{{ item.title }}</h2></div></a>
+{% endfor %}
+</div>
+{% endif %}
+
+{% if include.links == 2 %}
+<div id="nav2">
+  <a href="aktuell.html" class="button3" id="nav2left"><div id="aktuell"><img src="../bilder/bAktuelles.png" alt="Aktuelles" width="100%"></div></a>
+      <div id="leiste">
+      <a href="javascript:previousProject()" class="buttonAktuell"><div id="prevProj"><img src={{ "bilder/Buttons/bpreviousProject.png" | absolute_url }} alt="01" width="100%" height="100%"></div></a>
+        <a href="javascript:previousPage()" class="buttonAktuell"><div id="prevPage"><img src={{ "bilder/Buttons/bpreviousPage.png" | absolute_url }} alt="02" width="100%" height="100%"></div></a>
+        <a href="javascript:nextPage()" class="buttonAktuell"><div id="nextPage"><img src={{ "bilder/Buttons/bnextPage.png" | absolute_url }} alt="03" width="100%" height="100%"></div></a>
+        <a href="javascript:nextProject()" class="buttonAktuell"><div id="nextProj"><img src={{ "bilder/Buttons/bnextProject.png" | absolute_url }} alt="04" width="100%" height="100%"></div></a>
+
+      </div>
+<a href="" class="button4" id="nav2right"><div id="kind"><img src={{ "../bilder/bVerbaende.png" | absolute_url }} alt="Kind" width="100%"></div></a>
+<a href="" class="button4"><div id="sport"><img src={{ "../bilder/bOeffentliches.png" | absolute_url }} alt="Sport" width="100%"></div></a>
+<a href="privat.html" class="button4"><div id="privat"><img src={{ "../bilder/bPrivatgaerten.png" | absolute_url }} alt="Privatgaerten" width="100%"></div></a>
+</div>
+{% endif %}
+
+{% if include.links == 3 %}
+<div id="nav2">
+<a href="aktuell.html" class="button3"><div class="katleft" id="aktuell"><img src="../bilder/bAktuelles.png" alt="Aktuelles" width="100%" height="100%"></div></a>
+<a href="privat.html" class="button3"><div class="katleft" id="privat"><img src="../bilder/bPrivatgaerten.png" alt="Privatgaerten" width="100%" height="100%"></div></a>
+<div id="leiste">
+{% for item in site.data.pro-priv.docs %}
+{% assign number = forloop.index %}
+{% if forloop.index < 10 %}
+{% assign number = forloop.index | prepend: "0" | truncate: 2, "" %}
+{% endif %}
+<a href="{{ number }}.html" class="button2"><div><h4>{{ number }}</h4></div></a>
+{% endfor %}
+</div>
+<a href="" class="button4"><div class="katright" id="verbaende"><img src="../bilder/bVerbaende.png" alt="Verbaende" width="100%" height="100%"></div></a>
+<a href="" class="button4"><div class="katright" id="oeffentlich"><img src="../bilder/bOeffentliches.png" alt="Oeffentliche Projekte" width="100%" height="100%"></div></a>
+</div>
+{% endif %}
+
+{% comment %}
+<img src="../bilder/{{ number }}K.png" alt="{{ number }}" width="100%" height="100%">
+<img src={{ "bilder/bEssenz.png" | absolute_url }} alt="Philosophie" width="100%" height="100%">
+<a href={{ "buero/essence/essence.html" | absolute_url }} class="button"><div id="essence"><h2 class="">B&uuml;ro</h2></div></a>
+  <a href={{ "buero/partners/partners.html" | absolute_url }} class="button"><div id="partners"><h2>Partner</h2></div></a>
+  <a href={{ "buero/art/art.html" | absolute_url }} class="button"><div id="art"><h2>Kunst</h2></div></a>
+  <a href={{ "buero/sculpture/sculpture.html" | absolute_url }} class="button"><div id="sculpture"><h2>Skulptur</h2></div></a>
+{% endcomment %}
