@@ -2,17 +2,3 @@ _site
 .sass-cache
 .jekyll-metadata
 
-_data
-_includes
-_layouts
-bilder
-buero
-font
-kontakt
-projekte
-_config.yml
-index.md
-standard.css
-Gemfile
-Gemfile.lock
-standard.js
