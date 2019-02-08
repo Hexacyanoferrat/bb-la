@@ -1,3 +1,17 @@
+ol.carousel-indicators {
+  position: absolute;
+  bottom: -50px;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  width: 30px;
+  height: 5px;
+  border: 1px solid darkgrey;
+  background: lightgrey;
+}
+
+ol.carousel-indicators li.active {background: #1679BD;}
 
 
 #bblogo {max-width: 150px; min-width: 100px;}
@@ -5,6 +19,9 @@
 .bg-dark {color: white;}
 .bg-primary {color: white;}
 
-.spacer {height: 50px;}
+.spacer-xl {height: 50px;}
+.spacer-lg {height: 20px;}
+.spacer {height: 10px;}
+
 
 
