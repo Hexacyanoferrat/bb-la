@@ -1,0 +1,13 @@
+#: locale=de
+
+## Tour
+
+### Beschreibung
+
+### Titel
+tour.name = Unbenannt 1
+
+## Media
+
+### Titel
+panorama_90D6F171_9C5C_676D_41C6_EE27A5F21AE9.label = 47_VRAY3_7_textures_0000-DeNoiseAI-low-light
